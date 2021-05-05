@@ -1,4 +1,4 @@
 ---
 
 - name: isntall awx
-  command: ansible-playbook -i /tmp/awx/installer/inventoryng /tmp/installer/install.yml
+  command: ansible-playbook -i /tmp/awx/installer/inventoryng /tmp/awx/installer/install.yml
