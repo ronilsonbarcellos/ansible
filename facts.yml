@@ -1,0 +1,8 @@
+---
+
+- hosts: all
+  gather_facts: yes
+  tasks:
+  - name: Print all avalabke facts
+    var: ansible_facts #: ['distribution'] == "Ubuntu"
+
