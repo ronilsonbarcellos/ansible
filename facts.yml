@@ -4,5 +4,6 @@
   gather_facts: yes
   tasks:
   - name: Print all avalabke facts
-    var: ansible_facts #: ['distribution'] == "Ubuntu"
+    ansible.bultin.debug:
+      var: ansible_facts #: ['distribution'] == "Ubuntu"
 
