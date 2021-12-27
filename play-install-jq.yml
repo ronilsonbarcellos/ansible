@@ -1,0 +1,68 @@
+---
+- name: "instala jq"
+  hosts: localhost
+  #connection: local
+  gather_facts: False
+
+  tasks:
+    - name: Make sure the current version of ‘jq’ is installed.
+    dnf:
+      name: jq
+      state: latest
+    #- name: Install Collection
+    #  command: ansible-galaxy collection install check_point.mgmt --force #-p ~/.ansible/collections/ansible_collections
+    #- name: Find check_point.mgmt
+    #  find:
+    #    paths: ~/.ansible/
+    #    recurse: yes
+    #    file_type: directory
+    #    #patterns: '*cp_mgmt_add_data_center_object.py'
+
+    #- name: Creates directory 01
+    #  file:
+    #    path: ~/.ansible/plugins/modules
+    #    state: directory
+
+    #- name: Creates directory 01
+    #  file:
+    #    path: /usr/share/ansible/plugins/modules
+    #    state: directory
+    #- name: Creates directory 02
+    #  file:
+    #    path: ~/.ansible/plugins/modules
+    #    state: directory
+    #- name: Creates directory 03
+    #  file:
+    #    path: /var/lib/awx/.ansible/plugins/modules
+    #    state: directory
+
+    #- name: Ansible copy multiple files with wildcard matching 01.
+    #  copy:
+    #    src: "{{ item }}"
+    #    dest: /usr/share/ansible/plugins/modules #~/.ansible/plugins/modules
+    #  with_fileglob:
+    #    - /var/lib/awx/.ansible/collections/ansible_collections/check_point/mgmt/plugins/modules/cp_mgmt_add_data_center_object.py
+
+    #- name: Ansible copy multiple files with wildcard matching 02.
+    #  copy:
+    #    src: "{{ item }}"
+    #    dest: ~/.ansible/plugins/modules
+    #  with_fileglob:
+    #    - /var/lib/awx/.ansible/collections/ansible_collections/check_point/mgmt/plugins/modules/cp_mgmt_add_data_center_object.py
+
+    #- name: Ansible copy multiple files with wildcard matching 03.
+    #  copy:
+    #    src: "{{ item }}"
+    #    dest: /var/lib/awx/.ansible/plugins/modules
+    #  with_fileglob:
+    #    - /var/lib/awx/.ansible/collections/ansible_collections/check_point/mgmt/plugins/modules/cp_mgmt_add_data_center_object.py
+
+
+
+    #- name: Create symbolic link to module
+    #  #ansible.builtin.file:
+    #  file:
+    #    src: /var/lib/awx/.ansible/collections/ansible_collections/check_point/mgmt/plugins/modules
+    #    dest: ~/.ansible/plugins/
+    #    force: yes
+    #    state: link
