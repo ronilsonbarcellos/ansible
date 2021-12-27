@@ -6,9 +6,9 @@
 
   tasks:
     - name: Make sure the current version of ‘jq’ is installed.
-    dnf:
-      name: jq
-      state: latest
+      dnf:
+        name: jq
+        state: latest
     #- name: Install Collection
     #  command: ansible-galaxy collection install check_point.mgmt --force #-p ~/.ansible/collections/ansible_collections
     #- name: Find check_point.mgmt
