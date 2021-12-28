@@ -11,8 +11,8 @@
     #    state: latest
     - name: This command will change the working directory to somedir/
       ansible.builtin.shell:
-        cmd: ls -l /
-        chdir: /
+        cmd: ls -l /usr/share/ansible/collections/ansible_collections/
+    #    chdir: /
     #- name: Install Collection
     #  command: ansible-galaxy collection install check_point.mgmt --force #-p ~/.ansible/collections/ansible_collections
     #- name: Find check_point.mgmt
