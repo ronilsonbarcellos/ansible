@@ -5,10 +5,10 @@
   gather_facts: False
 
   tasks:
-    - name: Make sure the current version of ‘jq’ is installed.
-      dnf:
-        name: jq
-        state: latest
+    #- name: Make sure the current version of ‘jq’ is installed.
+    #  dnf:
+    #    name: jq
+    #    state: latest
     - name: This command will change the working directory to somedir/
       ansible.builtin.shell:
         cmd: ls -l /
